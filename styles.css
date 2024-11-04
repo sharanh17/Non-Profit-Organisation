@@ -17,7 +17,18 @@ body {
   align-items: center;
   padding: 0 5rem;
 }
+.heading-white-blue {
+  padding: 0.7rem 1rem;
+  color: black;
+  background-color: white;
+  font-weight: 100;
+  font-size: 1.1rem;
+  margin-bottom: 0.8em;
+}
 
+.text-white {
+  color: #fff;
+}
 .underline {
   text-decoration: none;
 }
@@ -83,6 +94,9 @@ body {
   height: 20rem;
 }
 
+.stories-content {
+  color: #fff;
+}
 .heading {
   position: absolute;
   padding: 0.8rem 2rem;
@@ -373,6 +387,7 @@ body {
 .article-heading {
   width: 40rem;
   font-size: 3rem;
+  color: #fff;
 }
 
 .article-contents {
@@ -460,6 +475,9 @@ body {
   justify-content: space-evenly;
 }
 
+.bg-green {
+  background-color: hsl(142, 77%, 86%);
+}
 .footer-3-box hr {
   margin: 0.6rem 0;
 }
@@ -490,7 +508,7 @@ body {
   text-align: center;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 990px) {
   .header {
     width: 70%;
     flex-wrap: wrap;
