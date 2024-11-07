@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+.header {
+  width: 100%;
+  height: 6em;
+  margin: 1% auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+.underline {
+  text-decoration: none;
+}
+
+.button {
+  border: none;
+  padding: 0.7rem 1.5rem;
+  color: hsl(220, 30%, 30%);
+  background-color: hsl(142, 77%, 86%);
+  border-radius: 5rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.color {
+  color: hsl(0, 0%, 0%);
+}
+
+.button:hover {
+  background-color: hsl(220, 30%, 30%);
+  color: hsl(142, 77%, 86%);
+}
+
+.header-menu {
+  width: 25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-heading {
+  font-weight: 500;
+  width: 10rem;
+  font-size: 1.6rem;
+}
+
+.fa-bars {
+  display: none;
+}
+
+/* @font-face {
+  font-family: "Komet Medium";
+  src: local("fonts"), local("fonts"),
+    url("fonts/komet-medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Komet Light";
+  src: local("fonts"), local("fonts"),
+    url("fonts/Komet\ Light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Flood Std";
+  src: local("fonts"), local("fonts"),
+    url("fonts/Flood\ Std.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+} */
+
+.flood-std-font {
+  font-family: "Flood Std", sans-serif;
+}
+
+.poynter-old-style-font {
+  font-family: "Poynter Old Style", sans-serif;
+}
+
+body {
+  font-family: "Komet Light", sans-serif;
+  font-size: 16px;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-green {
+  background-color: hsl(142, 77%, 86%);
+}
+
+.bg-blue {
+  background-color: hsl(220, 30%, 30%);
+}
+
+.text-black {
+  color: hsl(0, 0%, 0%);
+}
+
+.text-white {
+  color: hsl(0, 0%, 100%);
+}
+
+.text-blue {
+  color: hsl(220, 30%, 30%);
+}
+
+.text-green {
+  color: hsl(142, 77%, 86%);
+}
+
+.decoration-none {
+  text-decoration: none;
+}
+
+.div-flex {
+  display: flex;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.button {
+  font-family: "Poynter Old Style", sans-serif;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  color: hsl(220, 30%, 30%);
+  background-color: hsl(142, 77%, 86%);
+  border-radius: 5rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.heading {
+  padding: 0.68rem 2.5rem;
+  font-weight: 300;
+}
+
+.container-margin-padding {
+  margin: 0 auto;
+  width: min(100%, 71.25rem);
+  padding: 0 0.6rem;
+}
+
+.header-section {
+  margin: 1.25rem 0;
+}
+
+.header-container {
+  margin: 1% auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: hsl(220, 30%, 30%);
+  color: hsl(142, 77%, 86%);
+}
+
+.header-heading {
+  font-family: "Poynter Old Style", sans-serif;
+  font-weight: 600;
+  width: 9rem;
+  font-size: 1.4rem;
+}
+
+.header-menu {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-bars {
+  display: none;
+}
+
+.our-story-section {
+  padding: 4rem 0;
+}
+
+.story-info-container,
+.about-story-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.story-info-container {
+  margin-bottom: 5rem;
+  align-items: center;
+}
+
+.story-info-left-container {
+  display: flex;
+  flex-direction: column;
+  width: min(15.375rem, 25%);
+}
+
+.story-info-left-container h3 {
+  font-size: 2.75rem;
+  margin: 0 0 3rem;
+}
+
+.story-info-left-container .heading {
+  padding: 0.625rem 0 0.625rem 1.875rem;
+}
+
+.our-story-image {
+  width: min(48rem, 70%);
+  height: min(28.99rem, 80vw);
+  background-image: url("/assets/lady-baby.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-story-left-container {
+  width: min(34rem, 49%);
+  font-size: 1.75rem;
+  padding: 4.75rem 4rem;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.about-story-right-container {
+  width: min(32.06rem, 48%);
+}
+
+.about-story-right-container h3 {
+  font-size: 2.75rem;
+  margin-bottom: 1.875rem;
+}
+
+.about-story-right-container p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.subscribe-section {
+  padding: 4.37rem 0;
+}
+
+.subscribe-container {
+  display: flex;
+  justify-content: center;
+  column-gap: 4rem;
+}
+
+.subscribe-message {
+  font-weight: 600;
+  width: 45%;
+  font-size: 1.75rem;
+}
+
+.subscribe-form {
+  width: 30rem;
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
+.email-input-box {
+  border: none;
+  padding: 0.6rem 7.1rem 0.8rem 1.5rem;
+  border-radius: 2rem;
+}
+
+.subscribe-button {
+  border: none;
+  padding: 0.7rem 1.5rem;
+  background-color: hsl(220, 30%, 30%);
+  color: hsl(142, 77%, 86%);
+  border-radius: 5rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.subscribe-button:hover {
+  color: hsl(220, 30%, 30%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+.footer {
+  font-size: 0.87rem;
+}
+
+.footer-content {
+  padding: 7.1rem 0.5rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content-container {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-content-sub-container {
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5rem;
+}
+
+.footer-content-sub-container hr {
+  margin-bottom: 0.6rem;
+}
+
+.footer-content-sub-container a:hover {
+  color: hsl(0, 0%, 65%);
+}
+
+.footer-content .header-heading {
+  margin: 0;
+}
+
+.footer-content .motto {
+  width: 11rem;
+  font-size: 2.75rem;
+  text-align: right;
+}
+
+.footer-bottom {
+  margin-bottom: 0.2rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 990px) {
+  .container-margin-padding {
+    margin: 0 auto;
+    width: min(100%, 41.25rem);
+    padding: 0 0.6rem;
+  }
+
+  .header-container {
+    column-gap: min(10rem, 10%);
+    flex-wrap: wrap;
+  }
+
+  .header-menu {
+    order: 1;
+  }
+
+  .story-info-container,
+  .about-story-container {
+    flex-direction: column;
+    row-gap: 3.75rem;
+  }
+
+  .story-info-left-container,
+  .our-story-image,
+  .about-story-left-container,
+  .about-story-right-container {
+    width: 100%;
+  }
+
+  .about-story-left-container {
+    order: 1;
+  }
+
+  .subscribe-container {
+    flex-direction: column;
+    row-gap: 1.25rem;
+  }
+
+  .subscribe-message {
+    width: 100%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  .footer-content-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-content .motto {
+    align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container-margin-padding {
+    width: min(41.25rem, 100%);
+  }
+
+  .header-menu {
+    width: min(19.3rem, 100%);
+  }
+
+  .subscribe-form {
+    width: 100%;
+    flex-direction: column;
+    row-gap: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .container-margin-padding {
+    margin: 0;
+  }
+
+  .heading {
+    font-size: 0.875rem;
+  }
+
+  .header-menu,
+  .donate-button {
+    display: none;
+  }
+
+  .fa-solid {
+    display: block;
+  }
+
+  .subscribe-message {
+    font-size: 1.125rem;
+  }
+
+  .footer-content-container {
+    flex-direction: column;
+    text-align: start;
+    row-gap: 2rem;
+  }
+
+  .footer-content .motto {
+    align-self: flex-start;
+  }
+}
